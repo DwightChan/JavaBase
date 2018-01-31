@@ -5,7 +5,7 @@ import java.io.File;
 public class FileDemo3 {
 	public static void main(String[] args) {
 		//获取文件属性信息
-		File file = new File("e:/1.txt");
+		File file = new File("/Users/dwight/Desktop/java/test/test2.plist");
 		
 		//获取绝对路径   从根路径开始表示的路径就是绝对路径
 		String path = file.getAbsolutePath();

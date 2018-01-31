@@ -17,7 +17,7 @@ public class VectorDemo {
 		v.add("张三");
 		
 		//3.查看有多少元素\
-		System.out.println(v.capacity());
+		System.out.println(v.capacity()); // 表示的是容量大小 而不是 真实的元数个数
 		System.out.println(v.size());
 		System.out.println(v);
 		

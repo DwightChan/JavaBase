@@ -13,7 +13,7 @@ public class Person {
 		this.id = id;
 		this.name = name;
 	}
-	
+	// 重写 hashcode 方法的同时 一定要重写 equals 方法
 	//重写hashCode方法
 	@Override
 	public int hashCode() {

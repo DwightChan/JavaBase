@@ -6,7 +6,7 @@ import java.io.InputStream;
 public class InputStreamDemo {
 	public static void main(String[] args) throws Exception {
 		//定义源
-		String path = "e:/1.txt";
+		String path = "/Users/dwight/Desktop/java/test/1.txt";
 		
 		//创建文件字节输入流对象
 		InputStream in = new FileInputStream(path);

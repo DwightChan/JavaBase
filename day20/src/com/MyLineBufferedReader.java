@@ -6,11 +6,11 @@ import java.io.IOException;
 
 public class MyLineBufferedReader extends BufferedReader {
 	private int lineNum;
-	private BufferedReader reader;
+	private BufferedReader reader; // 自己也要维护一份
 	
 	public MyLineBufferedReader(BufferedReader in) {
-		super(in);
-		this.reader = in;
+		super(in);			// 传给父类
+		this.reader = in; 	// 自己维护的一份
 	}
 	
 	//觉得readLine方法没有行号,不爽
@@ -24,7 +24,7 @@ public class MyLineBufferedReader extends BufferedReader {
 	}
 	
 	public static void main(String[] args) throws Exception {
-		String name = "E:/逍遥/1125/day02/code/com_520it_04/AssigningDemo.java";
+		String name = "/Users/dwight/Desktop/github/JavaBase/day17/src/com/_520it_02/ForeachDemo.java";
 		MyLineBufferedReader reader = new MyLineBufferedReader(new BufferedReader(new FileReader(name)));
 		
 		String data;

@@ -9,13 +9,13 @@ import java.io.OutputStream;
 
 public class ObjectStreamDemo {
 	public static void main(String[] args) throws Exception {
-		//write();
+//		write();
 		read();
 	}
 	
 	public static void read() throws Exception {
 		//定义源
-		InputStream is = new FileInputStream("1.txt");
+		InputStream is = new FileInputStream("dwight.txt");
 		
 		//创建对象输入流对象
 		ObjectInputStream in = new ObjectInputStream(is);
@@ -36,7 +36,7 @@ public class ObjectStreamDemo {
 	public static void write() throws Exception {
 		//使用对象流往外写对象
 		//确定目标
-		OutputStream os = new FileOutputStream("1.txt");
+		OutputStream os = new FileOutputStream("dwight.txt");
 		
 		//创建对象输出流对象
 		ObjectOutputStream out = new ObjectOutputStream(os);

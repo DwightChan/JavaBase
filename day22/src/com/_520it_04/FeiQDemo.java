@@ -7,7 +7,7 @@ import java.net.InetAddress;
 public class FeiQDemo {
 	public static void main(String[] args) throws Exception {
 		DatagramSocket ds = new DatagramSocket();
-		
+		/// 必须要按照 对应的格式才有效
 		String data = "1:100:隔壁家老王:super:32:到我办公室来下,交代你做的好事";
 		byte[] buf = data.getBytes();
 		/*

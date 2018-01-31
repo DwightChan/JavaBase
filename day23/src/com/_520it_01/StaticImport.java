@@ -1,6 +1,7 @@
 package com._520it_01;
 
 //表示导入该类的所有静态的成员
+//import static java.lang.Math.*; 静态导入该类的所有静态成员
 import static java.lang.Math.E;
 import static java.util.Arrays.sort;//静态导入导入的是静态的成员
 //静态导入不能使用与Object类中同名的方法
@@ -22,6 +23,7 @@ public class StaticImport {
 		
 		System.out.println(Math.PI);
 		System.out.println(E);
+
 	}
 
 }

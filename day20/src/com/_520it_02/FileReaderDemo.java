@@ -6,7 +6,7 @@ import java.io.Reader;
 public class FileReaderDemo {
 	public static void main(String[] args) throws Exception {
 		//确定源
-		String name = "e:/1.txt";
+		String name = "/Users/dwight/Desktop/java/test/1.txt";
 		
 		//创建流对象
 		Reader reader = new FileReader(name);

@@ -32,7 +32,7 @@ public class Server {
 		}
 		
 		// 4：关闭资源（服务端一般不关闭）
-		s.close();
+		s.close(); // 这个可以不用关, 下面的关掉之前底层会关闭这里
 		ss.close();
 	}
 }

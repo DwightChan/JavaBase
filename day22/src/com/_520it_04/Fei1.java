@@ -11,8 +11,9 @@ public class Fei1 {
 		//专门负责发送
 		new Thread(new Runnable() {
 			@Override
-			public void run() {
+			public void run() { // 重写父类的方法, 父类方法没有抛异常, 则这里只能用 try catch
 				try (	DatagramSocket ds= new DatagramSocket();
+						/// 标准输入流
 						BufferedReader br = new BufferedReader(new InputStreamReader(System.in));) {
 					while (true) {
 						String data = br.readLine();

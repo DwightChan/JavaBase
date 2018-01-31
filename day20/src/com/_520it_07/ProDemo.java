@@ -15,7 +15,7 @@ public class ProDemo {
 	private static void work1() throws IOException {
 		Properties pro = new  Properties();
 		//读取属性文件
-		pro.load(new FileReader("e:/my.properties"));
+		pro.load(new FileReader("/Users/dwight/Desktop/java/test/my.properties"));
 		
 //		System.out.println(pro);
 //		获取文件中的内容  根据Key来获取
@@ -38,8 +38,8 @@ public class ProDemo {
 			pass = reader.readLine();
 			pro.setProperty("password", pass);
 			
-			//保存新的内容
-			pro.store(new FileWriter("e:/my.properties"), null);
+			//保存新的内容 最后一个字段是 null 表示没有注释内容
+			pro.store(new FileWriter("/Users/dwight/Desktop/java/test/my.properties"), null);
 		} else {
 			System.out.println("登陆失败");
 		}

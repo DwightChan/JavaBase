@@ -12,6 +12,9 @@ public class Upload {
 		Socket s = new Socket("localhost",10086);
 		
 		System.out.println("请输入要上传的文件路径:");
+		// System.in 字节流
+		// InputStreamReader(System.in) 字节流转字符流
+		//
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		String path = reader.readLine();
 		

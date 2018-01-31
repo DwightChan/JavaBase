@@ -6,7 +6,7 @@ import java.io.InputStream;
 
 public class StreamDemo {
 	public static void main(String[] args) throws Exception {
-		String name = "e:/1.txt";
+		String name = "/Users/dwight/Desktop/java/test/1.txt";
 		
 		InputStream in = new FileInputStream(name);
 		
@@ -16,7 +16,7 @@ public class StreamDemo {
 	}
 
 	private static void work1(InputStream in) throws IOException {
-		byte[] b = new byte[3];
+		byte[] b = new byte[4];
 		
 		int len;
 		while ((len = in.read(b)) != -1) {

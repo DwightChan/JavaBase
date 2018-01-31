@@ -10,13 +10,13 @@ public class RegexDemo {
 		//匹配
 //		boolean flag = work1(telNo);
 //		System.out.println(flag);
-		//work4(); 
+		work4(); 
 	}
 	
 	private static void work4() { 
 		String data = "我我我今天吃吃吃吃吃吃了好好多的好好吃的";
 		String s = data.replaceAll("(.)\\1+", "$1");
-		System.out.println(s);
+		System.out.println(s); // 我今天吃了好多的好吃的
 	}
 	
 	//替换操作

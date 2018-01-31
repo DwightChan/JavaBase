@@ -5,7 +5,7 @@ import java.io.File;
 public class FileDemo2 {
 	public static void main(String[] args) {
 		//判断操作
-		File file = new File("e:/cjk.txt");
+		File file = new File("/Users/dwight/Desktop/java/test/test2.plist");
 		
 		//判断路径是否存在   true:存在  false:不存在
 		System.out.println(file.exists());

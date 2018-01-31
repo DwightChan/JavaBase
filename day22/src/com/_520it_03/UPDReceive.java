@@ -6,7 +6,7 @@ import java.net.DatagramSocket;
 public class UPDReceive {
 	public static void main(String[] args) throws Exception {
 //		1：创建DatagramSocket对象   参数:监听的端口号
-		DatagramSocket ds = new DatagramSocket(10086);
+		DatagramSocket ds = new DatagramSocket(10087);
 		
 //		2：创建一个数据包
 		byte[] buf = new byte[1024];

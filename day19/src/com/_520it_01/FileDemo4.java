@@ -5,7 +5,7 @@ import java.io.File;
 public class FileDemo4 {
 	public static void main(String[] args) {
 		//遍历文件夹
-		File root = new File("E:/");
+		File root = new File("/Users/dwight/Desktop/java");
 		
 		//千万不到递归删除文件
 //		searchAllFiles(root);
@@ -15,7 +15,6 @@ public class FileDemo4 {
 		for (File f : roots) {
 			System.out.println(f);
 		}
-		
 		
 	/*	//调用list方法可以返回该目录下所有的文件和文件夹的名字
 		String[] names = root.list();
@@ -33,6 +32,7 @@ public class FileDemo4 {
 				}
 			}
 		}
+		xjad Java 反编译工具
 	 */
 	}
 	

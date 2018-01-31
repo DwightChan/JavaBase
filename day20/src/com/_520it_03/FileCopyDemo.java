@@ -12,10 +12,45 @@ import java.io.Reader;
 import java.io.Writer;
 
 public class FileCopyDemo {
-	public static void main(String[] args) {
-		copy3("E:/逍遥/1125/eclipse-jee-mars-R-win32.zip","d:/eclipse-jee-mars-R-win32.zip");
+	public static void main(String[] args) throws Exception {
+		copy3("/Users/dwight/Desktop/ioshtml5.rar","/Users/dwight/Desktop/java/ioshtml5.rar");
+//		copy4("/Users/dwight/Desktop/ioshtml5.rar","/Users/dwight/Desktop/java/ioshtml5.rar");
 	}
 	
+	private static void copy4(String src, String dest) throws Exception {
+		
+		try {
+			// 这些流都是资源, 资源用完都要关闭
+			Reader reader = new FileReader(src);
+			Writer writer = new FileWriter(dest);
+			
+			char[] c = new char[1024];
+			int len;
+			long s = System.currentTimeMillis();
+			
+			// 边读边写
+			while ((len = reader.read(c)) != -1) {
+				writer.write(c, 0, len);
+			}
+			
+			writer.flush();
+			
+			// try 中出现异常 资源么有关闭
+			String a = null;
+			System.out.println(a.toCharArray());
+			
+			
+			System.out.println(System.currentTimeMillis() - s);
+			
+			reader.close();
+			writer.close();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
 	private static void tryWithResource() {
 		try (	//这里必须是实现了AutoCloseadble接口的对象
 				InputStream is = new FileInputStream("");
@@ -33,7 +68,7 @@ public class FileCopyDemo {
 			}
 			System.out.println(System.currentTimeMillis() - s);
 			
-			//去掉用关闭资源的代码
+			//去掉用关闭资源的代码 不需要手动关闭了, 自动关闭代码
 //			is.close();
 //			os.close();
 		} catch (Exception e) {
@@ -68,12 +103,12 @@ public class FileCopyDemo {
 			e.printStackTrace();
 		} finally {
 			try {
-				if (reader != null) {
+				if (reader != null) { // 先判断是否为空 如果
 					reader.close();
 				}
 			} catch (Exception e) {
 				e.printStackTrace();
-			} finally {
+			} finally { /// 这样可以保证一定可以关闭 所有的流接口
 				try {
 					if (writer != null) {
 						writer.close();

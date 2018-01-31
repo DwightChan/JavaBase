@@ -8,6 +8,7 @@ import java.net.Socket;
 
 public class FileUploadServer {
 	public static void main(String[] args) throws Exception {
+		/// ·þÎñ¶Ë¿Ú
 		ServerSocket ss = new ServerSocket(10086);
 		
 		while (true) {

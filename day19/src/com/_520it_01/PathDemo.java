@@ -12,7 +12,7 @@ public class PathDemo {
 		System.out.println(path);
 		
 //		Java语言是跨平台的
-//		path = "d:" + File.separatorChar + "逍遥" + File.separatorChar + "day01";
+		path = "d:" + File.separatorChar + "逍遥" + File.separatorChar + "day01";
 		System.out.println(path);
 	}
 }

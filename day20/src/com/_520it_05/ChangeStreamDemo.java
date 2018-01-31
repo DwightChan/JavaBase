@@ -17,7 +17,7 @@ public class ChangeStreamDemo {
 
 	private static void work2() throws Exception {
 		//输入
-		Reader reader = new InputStreamReader(new FileInputStream("e:/1.txt"));
+		Reader reader = new InputStreamReader(new FileInputStream("/Users/dwight/Desktop/java/test/1.txt"));
 		char[] c = new char[1024];
 		int len;
 		while ((len = reader.read(c)) != -1) {
@@ -29,7 +29,7 @@ public class ChangeStreamDemo {
 	
 	private static void work1() throws Exception {
 		//输出
-		OutputStream out = new FileOutputStream("e:/1.txt");
+		OutputStream out = new FileOutputStream("/Users/dwight/Desktop/java/test/1.txt");
 		Writer writer = new OutputStreamWriter(out);
 		
 		writer.write("万万没想到,完全是浮云");

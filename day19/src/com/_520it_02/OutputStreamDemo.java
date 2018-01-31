@@ -6,8 +6,8 @@ import java.io.OutputStream;
 public class OutputStreamDemo {
 	public static void main(String[] args) throws Exception {
 		//确定目标
-//		File file = new File("e:/1.txt"); 
-		String path = "e:/1.txt";
+//		File file = new File("/Users/dwight/Desktop/java/test/1.txt"); 
+		String path = "/Users/dwight/Desktop/java/test/1.txt";
 		
 		//创建一个文件输出字节流对象  文件要是不存在会创建出来
 //		OutputStream out = new FileOutputStream(file);
